@@ -1,0 +1,56 @@
+{
+	"name": "directus-extension-operation-nanoid",
+	"description": "Generate a NanoID in your Directus flows.",
+	"type": "module",
+	"version": "1.0.0",
+	"license": "MIT",
+	"icon": "extension",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:antonioso-ng/directus-extension-operation-nanoid.git"
+	},
+	"bugs": {
+		"url": "https://github.com/antonioso-ng/directus-extension-operation-nanoid/issues"
+	},
+	"author": {
+		"name": "Antonio Song",
+		"email": "hello@antonioso.ng"
+	},
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-extension-operation",
+		"operation-nanoid",
+		"nanoid"
+	],
+	"files": [
+		"dist"
+	],
+	"directus:extension": {
+		"type": "operation",
+		"path": {
+			"app": "dist/app.js",
+			"api": "dist/api.js"
+		},
+		"source": {
+			"app": "src/app.ts",
+			"api": "src/api.ts"
+		},
+		"host": "^10.10.0",
+		"hidden": false
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify",
+		"link": "directus-extension link"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "12.0.1",
+		"@types/node": "^22.5.0",
+		"typescript": "^5.5.4",
+		"vue": "^3.4.38"
+	},
+	"dependencies": {
+		"nanoid": "^5.0.7"
+	}
+}
