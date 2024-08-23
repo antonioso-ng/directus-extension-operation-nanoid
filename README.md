@@ -70,9 +70,9 @@ bun run build
         Made with 💜 and 3 cups of ☕
     </p>
     <p align="center">
-        Website <a href="https://antonioso.ng" target="_blank">antonioso.ng</a>
+        Website <a href="https://antonioso.ng" target="_blank"></a>
          •  
-        GitHub <a href="https://github.com/antonioso-ng">@antonioso-ng</a>
+        <a href="https://buymeacoffee.com/antoniosong">Buy Me a Coffee ☕</a>
          • 
         LinkedIn <a href="https://linkedin.com/in/antoniosong">@antoniosong</a>
     </p>
