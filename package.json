@@ -37,7 +37,11 @@
 			"api": "src/api.ts"
 		},
 		"host": "^10.10.0",
-		"hidden": false
+		"hidden": false,
+		"sandbox": {
+			"enabled": true,
+			"requestedScopes": {}
+		}
 	},
 	"scripts": {
 		"build": "directus-extension build",
