@@ -3,9 +3,9 @@ import { customAlphabet } from 'nanoid'
 
 export default defineOperationApp({
 	id: 'operation-nanoid',
-	name: 'Nanoid',
+	name: 'NanoID',
 	icon: 'numbers',
-	description: 'Generate a Nano ID',
+	description: 'Generate a NanoID',
 	overview: ({ seed = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_', prefix, suffix, length = 21 }) => [
 		{
 			label: 'ID',
