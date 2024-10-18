@@ -1,7 +1,7 @@
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="./assets/dark/img_header.png" />
-        <img width="100%" src="./assets/light/img_header.png" alt="Generate a Nano ID" />
+        <img width="100%" src="./assets/light/img_header.png" alt="Generate a NanoID" />
     </picture>
 </p>
 
@@ -58,7 +58,7 @@ For most flows, the recommended trigger will be an **Event Hook** with the **`it
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="./assets/dark/img_usage_1.png" />
-        <img width="100%" src="./assets/light/img_usage_1.png" alt="Generate a Nano ID" />
+        <img width="100%" src="./assets/light/img_usage_1.png" alt="A screenshot displaying how to create a new Directus flow using an Event Hook trigger." />
     </picture>
 </p>
 
@@ -69,7 +69,7 @@ The example below demonstrates how to create a Stripe-like NanoID, complete with
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="./assets/dark/img_usage_2.png" />
-        <img width="100%" src="./assets/light/img_usage_2.png" alt="Generate a Nano ID" />
+        <img width="100%" src="./assets/light/img_usage_2.png" alt="A screenshot displaying how to add the NanoID operation to the recently created Directus flow." />
     </picture>
 </p>
 
@@ -78,7 +78,7 @@ After saving the operation, you can preview the generated NanoID. The result can
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="./assets/dark/img_usage_3.png" />
-        <img width="100%" src="./assets/light/img_usage_3.png" alt="Generate a Nano ID" />
+        <img width="100%" src="./assets/light/img_usage_3.png" alt="A screenshot displaying an overview of the Directus flow with the NanoID operation properly generating the custom identifier." />
     </picture>
 </p>
 
@@ -89,7 +89,7 @@ You will assign the trigger's item ID using `{{ $trigger.key }}` and set the pay
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="./assets/dark/img_usage_4.png" />
-        <img width="100%" src="./assets/light/img_usage_4.png" alt="Generate a Nano ID" />
+        <img width="100%" src="./assets/light/img_usage_4.png" alt="A screenshot displaying how to save the generated NanoID to the item of the Directus flow trigger in a custom field." />
     </picture>
 </p>
 
@@ -98,7 +98,7 @@ After saving and activating your flow, test it to ensure that your custom NanoID
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="./assets/dark/img_usage_5.png" />
-        <img width="100%" src="./assets/light/img_usage_5.png" alt="Generate a Nano ID" />
+        <img width="100%" src="./assets/light/img_usage_5.png" alt="An overview of a simple Directus flow using the NanoID operation and successfully updating the item trigger with the generated identifier." />
     </picture>
 </p>
 
