@@ -5,20 +5,23 @@
     </picture>
 </p>
 
-
 # Introduction
 A Directus operation extension that generates a NanoID for your Directus flows using the official [`nanoid`](https://github.com/ai/nanoid) package.
 - **Customize your seed**: Use the default alphabet (`A-Za-z0-9_-`) or use your own custom alphabet.
-- **Set your length**: Modify the length of yoru NanoID according to your flow use-case.
+- **Set your length**: Modify the length of your NanoID according to your flow use-case.
 - **Add a prefix or suffix**: Want to use Stripe-style identifiers? Add a prefix and suffix to generated NanoIDs.
 
-# Installation
+# Use Cases
+- **Alternate IDs**: Create secondary IDs for your Directus items and resources.
+- **Unique identifiers**: Generate unique IDs for invoices, product codes, or any other specific needs.
+- **URL shortening**: Produce short, shareable links or permalinks.
 
+# Installation
 ## Install via Directus Marketplace
-The easiest way to install this package is via the Directus Marketplace, located inside of your Settings module.
+The easiest way to install this extension is through the Directus Marketplace, located inside of your Settings module.
 
 ## Install via Package Manager
-Install the extension by using `npm install` or the package manager of your choice (i.e. `pnpm`, `bun`) to your Directus project.
+Install the extension by using your preferred package manager (i.e. `pnpm`, `bun`).
 ```sh
 # Using pnpm
 pnpm i directus-extension-operation-nanoid
@@ -34,12 +37,12 @@ yarn add directus-extension-operation-nanoid
 ```
 
 ## Install Manually
-Clone this repository inside the `/extensions` folder of your Directus project.
+Clone this repository into the `/extensions` folder of your Directus project.
 ```sh
 git clone https://github.com/antonioso-ng/directus-extension-operation-nanoid
 ```
 
-If you require further information on how to manually install the extension inside your self-hosted instance or Docker instance, you can check the following [Directus documentation](https://docs.directus.io/extensions/installing-extensions.html#installing-via-the-extensions-directory) on the topic.
+If you require further information on how to manually install the extension inside your self-hosted instance or Docker instance, refer to the [Directus documentation](https://docs.directus.io/extensions/installing-extensions.html#installing-via-the-extensions-directory).
 
 # Usage
 1. Create a Directus flow with your chosen trigger.
@@ -103,12 +106,12 @@ After saving and activating your flow, test it to ensure that your custom NanoID
 </p>
 
 # Developing
-As with any project, clone this repository.
+To contribute or customize the extension, clone the repository.
 ```sh
 git clone https://github.com/antonioso-ng/directus-extension-operation-nanoid
 ```
 
-Install project dependencies.
+Install project dependencies using your preferred package manager.
 ```sh
 bun i
 ```
