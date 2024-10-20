@@ -2,7 +2,7 @@
 	"name": "directus-extension-operation-nanoid",
 	"description": "Generate a NanoID in your Directus flows.",
 	"type": "module",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"license": "MIT",
 	"icon": "extension",
 	"homepage": "https://github.com/antonioso-ng/directus-extension-operation-nanoid.git#readme",
