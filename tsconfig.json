@@ -24,5 +24,10 @@
 		"isolatedModules": true,
 		"rootDir": "./src"
 	},
-	"include": ["./src/**/*.ts"]
+	"include": ["./src/**/*.ts"],
+	"typeAcquisition": {
+		"include": [
+			"@directus/extensions/api.d.ts"
+		]
+	}
 }
