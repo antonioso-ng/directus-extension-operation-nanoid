@@ -1,5 +1,5 @@
 import { defineOperationApp } from '@directus/extensions-sdk'
-import { customAlphabet } from 'nanoid'
+import { nanoid } from './nanoid'
 
 export default defineOperationApp({
 	id: 'operation-nanoid',
@@ -9,7 +9,7 @@ export default defineOperationApp({
 	overview: ({ seed = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_', prefix, suffix, length = 21 }) => [
 		{
 			label: 'ID',
-			text: (prefix || '') + customAlphabet(seed, length)() + (suffix || ''),
+			text: (prefix || '') + nanoid(seed, length)() + (suffix || ''),
 		},
 	],
 	options: [
