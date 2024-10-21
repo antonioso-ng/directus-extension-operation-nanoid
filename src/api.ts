@@ -1,5 +1,9 @@
+/// <reference types="@directus/extensions/api.d.ts" />
 import { defineOperationApi } from '@directus/extensions-sdk'
-import { customAlphabet } from 'nanoid'
+
+import type { SandboxOperationConfig } from 'directus:api'
+
+import { nanoid } from './nanoid'
 
 type Options = {
 	seed: string,
@@ -8,9 +12,11 @@ type Options = {
 	length: number,
 }
 
-export default defineOperationApi<Options>({
+const operation: SandboxOperationConfig = {
 	id: 'operation-nanoid',
-	handler: ({ seed = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_', prefix, suffix, length = 21 }) => {		
-		return (prefix || '') + customAlphabet(seed, length)() + (suffix || '')
+	handler: ({ seed, prefix, suffix, length }) => {		
+		return (prefix || '') + nanoid(seed, length)() + (suffix || '')
 	},
-})
+}
+
+export default defineOperationApi<Options>(operation)
