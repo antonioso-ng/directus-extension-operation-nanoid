@@ -43,6 +43,7 @@
 	"scripts": {
 		"build": "directus-extension build",
 		"dev": "directus-extension build -w --no-minify",
+		"validate": "directus-extension validate",
 		"link": "directus-extension link"
 	},
 	"devDependencies": {
