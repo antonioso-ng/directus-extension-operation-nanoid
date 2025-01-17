@@ -55,5 +55,5 @@
 	"dependencies": {
 		"nanoid": "^5.0.9"
 	},
-	"packageManager": "bun@1.1.36"
+	"packageManager": "bun@1.1.44"
 }
