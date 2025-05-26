@@ -47,11 +47,11 @@
 		"link": "directus-extension link"
 	},
 	"devDependencies": {
-		"@directus/extensions-sdk": "13.0.4",
-		"@types/bun": "^1.2.10",
-		"@types/node": "^22.14.1",
+		"@directus/extensions-sdk": "13.1.0",
+		"@types/bun": "^1.2.14",
+		"@types/node": "^22.15.21",
 		"typescript": "^5.8.3",
-		"vue": "^3.5.13"
+		"vue": "^3.5.14"
 	},
 	"dependencies": {
 		"nanoid": "^5.1.5"
