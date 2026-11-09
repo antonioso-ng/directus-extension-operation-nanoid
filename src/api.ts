@@ -1,5 +1,5 @@
 import { defineOperationApi } from '@directus/extensions-sdk'
-import { customAlphabet } from 'nanoid'
+import { DEFAULT_ALPHABET, generateNanoid } from './nanoid'
 
 type Options = {
 	seed: string,
@@ -10,7 +10,11 @@ type Options = {
 
 export default defineOperationApi<Options>({
 	id: 'operation-nanoid',
-	handler: ({ seed = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_', prefix, suffix, length = 21 }) => {		
-		return (prefix || '') + customAlphabet(seed, length)() + (suffix || '')
+	handler: ({ seed = DEFAULT_ALPHABET, prefix, suffix, length = 21 }) => {
+		const id = generateNanoid(seed, length)
+
+		if (id === null) throw new Error('Alphabet must contain between 1 and 256 characters.')
+
+		return (prefix || '') + id + (suffix || '')
 	},
 })

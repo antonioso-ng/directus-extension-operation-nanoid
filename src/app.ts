@@ -1,17 +1,23 @@
 import { defineOperationApp } from '@directus/extensions-sdk'
-import { customAlphabet } from 'nanoid'
+import { DEFAULT_ALPHABET, generateNanoid } from './nanoid'
 
 export default defineOperationApp({
 	id: 'operation-nanoid',
 	name: 'NanoID',
 	icon: 'numbers',
 	description: 'Generate a NanoID',
-	overview: ({ seed = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_', prefix, suffix, length = 21 }) => [
-		{
-			label: 'ID',
-			text: (prefix || '') + customAlphabet(seed, length)() + (suffix || ''),
-		},
-	],
+	overview: ({ seed = DEFAULT_ALPHABET, prefix, suffix, length = 21 }) => {
+		const id = generateNanoid(seed, length)
+
+		return [
+			{
+				label: 'ID',
+				text: id === null
+					? 'Alphabet must contain between 1 and 256 characters.'
+					: (prefix || '') + id + (suffix || ''),
+			},
+		]
+	},
 	options: [
 		{
 			field: 'seed',

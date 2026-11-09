@@ -7,7 +7,7 @@
 
 # Introduction
 A Directus operation extension that generates a NanoID for your Directus flows using the official [`nanoid`](https://github.com/ai/nanoid) package.
-- **Customize your seed**: Use the default alphabet (`A-Za-z0-9_-`) or use your own custom alphabet.
+- **Seed**: This option supplies the custom alphabet—the characters allowed in generated IDs. It must contain between 1 and 256 characters; IDs remain random across executions.
 - **Set your length**: Modify the length of your NanoID according to your flow use-case.
 - **Add a prefix or suffix**: Want to use Stripe-style identifiers? Add a prefix and suffix to generated NanoIDs.
 
@@ -48,7 +48,7 @@ If you require further information on how to manually install the extension insi
 1. Create a Directus flow with your chosen trigger.
 2. Add the NanoID operation to your flow.
 3. Customize operation according to your needs by modifying the following options.
-    - **Seed**: The operation includes a default NanoID seed. You can specify a different seed value if you require deterministic IDs across executions.
+    - **Seed**: This value is the custom alphabet, not a deterministic seed. Choose 1 to 256 characters; generated IDs remain random across executions.
     - **Prefix**: Add a string to prepend to each generated NanoID, helping categorize or identify your IDs easily.
     - **Suffix**: Include a string to append to each generated NanoID, providing additional context or uniqueness.
     - **Length**: Set the desired length for the generated NanoID. The default is typically 21 characters, but you can adjust it as needed.
