@@ -37,7 +37,7 @@
 			"app": "src/app.ts",
 			"api": "src/api.ts"
 		},
-		"host": "^10.10.0",
+		"host": "^12.0.0",
 		"hidden": false
 	},
 	"scripts": {
